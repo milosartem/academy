@@ -114,7 +114,7 @@ body {
 
 /*Section*/
 
-.section {
+section {
   padding: 100px 0;
 }
 
@@ -182,6 +182,13 @@ body {
   background: #fff;
   width: 100%;
   max-width: 380px;
+  transition: 0.3s;
+}
+
+.service__card:hover {
+  background-color: #54bfaf;
+  color: white;
+  transform: scale(1.05);
 }
 
 .icon__card a {
@@ -207,4 +214,94 @@ a.btn__card {
   border: solid 1px black;
   padding: 10px 15px;
   text-transform: uppercase;
+}
+
+/*Latest Works*/
+
+.nav__works {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.works__btn {
+  font-size: 20px;
+  padding: 5px 15px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  border: solid 2px #54bfaf;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.works__btn:hover {
+  background: #54bfaf;
+  color: white;
+}
+
+.works__table {
+  margin-left: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  transition: 3s;
+}
+
+.works__item {
+  width: 33, 3333%;
+  margin: 10px 10px;
+  align-content: center;
+  position: relative;
+  transition: 0.3s;
+}
+
+.works__item img {
+  display: block;
+  transition: 0.3s;
+}
+.works__item:hover img {
+  transform: translate3d(-10px, -10px, 10px);
+  opacity: 0.2;
+}
+
+.works__item:hover .works__text {
+  opacity: 1;
+}
+
+.works__text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.works__text:hover {
+  opacity: 0.1;
+}
+
+.foot__works {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn__foot {
+  font-size: 20px;
+  padding: 5px 15px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  border: solid 2px #54bfaf;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.btn__foot:hover {
+  background: #54bfaf;
+  color: white;
 }
