@@ -11,11 +11,21 @@ body {
   line-height: 1.6;
 }
 
+big{
+  font-size: 50px;
+}
+
+
+
 /*Container*/
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.bg__gray{
+  background-color: #F0F1F1;
 }
 
 /*Header*/
@@ -304,4 +314,156 @@ a.btn__card {
 .btn__foot:hover {
   background: #54bfaf;
   color: white;
+}
+
+/*Plan price*/
+
+.table__plan{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+}
+
+.plan__item{
+  display: grid;
+  text-align: center;
+  width: 100%;
+  max-width: 370px;
+  background-color: #fff;
+  transition: .2s;
+}
+
+.plan__item:hover{
+   transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.item__header{
+  background-image: url("https://github.com/milosartem/milosartem.github.io/blob/main/picture/Rectangle%2014-mdpi.png?raw=true");
+  background-repeat: no-repeat;
+  height: 210px;
+  color: white;
+}
+
+.plan__title{
+  margin: 5%;
+  display: block;
+}
+
+.stat__plan{
+  font-size: 25px;
+}
+
+.mount__plan{
+  position: relative;
+  top:25px;
+  left: -65px;
+  margin: 0;
+}
+
+.plan__info{
+  display: grid;
+  margin: 20px auto;
+}
+
+.plan__info span{
+  width:100%;
+  max-width: 100px;
+  border-bottom: 1px solid #212121;
+  margin: 20px 0;
+}
+
+.plan__btn{
+  margin: 40px;
+}
+
+.btn__price{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  transition: .3s;
+}
+
+.btn__price:hover{
+  background: #54bfaf;
+  color:#fff;
+  border: 1px solid #54bfaf;
+}
+
+/*Our team*/
+
+.team__card{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__item{
+  text-align: center;
+}
+
+.item__info{
+  margin: 30px 0;
+}
+
+.name__item{
+  font-size: 20px;
+}
+
+.position__item{
+  color: #333333;
+}
+
+.social__item a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  margin: 5px;
+  border: 1px solid F1F1F0;
+  border-radius: 10px;
+  background-color: #F1F1F0;
+  color: #00897B;
+  transition:  .2s;
+}
+
+.social__item a:hover{
+  color: white;
+  background-color: #3949AB;
+}
+
+/*Blog*/
+
+.blog__item{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.blog__img{
+  padding: 5px 0;
+}
+
+.item__description{
+  padding: 50px;
+}
+
+.item__title{
+  color:#00897B;
+  font-size: 25px;
+  padding: 10px 0 20px 0;
+}
+
+.data__item span{
+  margin: 0 15px 0 0;
+}
+
+.item__text{
+  margin: 15px 0 0 0;
+}
+
+.btn__blog{
+  margin-top: 120px;
+  text-align: center;
 }
